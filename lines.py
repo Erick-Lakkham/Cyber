@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-
+import math
 """
 ZetCode Tkinter tutorial
 
@@ -32,6 +32,12 @@ class Example(Frame):
         #canvas.create_line(300, 35, 300, 200, dash=(4, 2))
         #canvas.create_line(55, 85, 155, 85, 105, 180, 55, 85)
 
+        i = 0
+        j = 0
+        while (i < 16):
+            canvas.create_line(250, 250, math.cos(j) * 250 + 250, math.sin(j) * 250 + 250)
+            j += math.pi / (8)
+            i += 1
         canvas.pack(fill=BOTH, expand=1)
 
 
