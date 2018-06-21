@@ -36,6 +36,7 @@ class Example(Frame):
         j = 0
         while (i < 16):
             canvas.create_line(250, 250, math.cos(j) * 250 + 250, math.sin(j) * 250 + 250)
+            canvas.create_line(math.cos(j) * 250 + 250, math.sin(j) * 250 + 250, math.cos(j) * 250 + 250, 250)
             j += math.pi / (8)
             i += 1
         canvas.pack(fill=BOTH, expand=1)
