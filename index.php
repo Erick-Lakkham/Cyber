@@ -31,7 +31,7 @@ function getRandomImage(imgAr, path) {
 </script>
 
 </head>
-<body>
+<body style="text-align: center">
 <script type="text/javascript">getRandomImage(images, 'img/')</script>
 <?php
 //phpinfo();
